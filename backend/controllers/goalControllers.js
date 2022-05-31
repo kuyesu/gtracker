@@ -21,3 +21,10 @@ const deleteGoal = (req, res) => {
         message: 'Delete goals'
     })
 }
+
+module.exports = {
+    getGoals,
+    setGoal,
+    updateGoal,
+    deleteGoal
+}
