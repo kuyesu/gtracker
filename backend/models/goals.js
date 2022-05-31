@@ -15,7 +15,7 @@ const goalScema = new mongoose.Schema({
         required: [true, 'Please add a completed']
     },
     owner: {
-        type: mongoose.Schema.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User',
         required: [true, 'Please add an owner']
     },
