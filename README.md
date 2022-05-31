@@ -1,5 +1,6 @@
 ## Track daily activities of the Team
-...
+
+---
 
 <!-- List of the features -->
 ### Supported features
@@ -17,3 +18,12 @@
 - `Create` Timelines
 - `Delete` Timelines
 - `Get` Notfication
+
+---
+### Future work
+- `Files and documents` manager
+- Team `roles`
+- `fork` or use template
+- project file `public` or `private`
+- `feedback`
+- `bot`
