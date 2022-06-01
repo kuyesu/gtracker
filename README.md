@@ -47,6 +47,7 @@
 - `Create` Timelines
 - `Delete` Timelines
 - `Get` Notfication
+- `heatmap calendar` for each user
 
 ---
 ### Future work
