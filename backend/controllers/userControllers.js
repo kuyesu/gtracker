@@ -4,6 +4,9 @@ const asyncHandler = require('express-async-handler')
 const User = require('../models/users')
 
 
+// @desc register user
+// @route POST /api/v1/user/
+// @access public
 const registerUser = asyncHandler(async (req, res) => {
     const { name, email, password } = req.body
     if (!name || !email || !password) {
@@ -43,13 +46,19 @@ const registerUser = asyncHandler(async (req, res) => {
 })
 
 
+// @desc login user
+// @route POST /api/v1/user/login
+// @access public
 const loginUser = asyncHandler ( async (req, res) =>{
 
 })
 
 
+// @desc get user
+// @route GET /api/v1/user/me
+// @access public
 const genSalt = asyncHandler ( async ( req, res) => {
-    
+
 })
 
 module.exports = {
