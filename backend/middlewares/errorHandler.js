@@ -2,6 +2,8 @@ const errorHandler = (err, req, res, next) => {
     let error = { ...err }
     error.message = err.message
 
+    const statusCode = res.statusCode ? res.statusCode : 500
+    
     // Log to console for dev
     console.log(err)
 
@@ -24,9 +26,11 @@ const errorHandler = (err, req, res, next) => {
     }
 
     // Send response
-    return res.status(error.statusCode).json({
+    res.status(statusCode)
+    res.json({
         success: false,
-        error: error.message
+        message: err.message,
+        stack: process.env.NODE_ENV === 'production' ? '🥞' : err.stack
     })
 }
 
