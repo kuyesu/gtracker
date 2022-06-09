@@ -8,7 +8,7 @@ const userRoute = require('./routes/userRoute')
 const errorHandle = require('./middlewares/errorHandler')
 
 dotenv.config()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8000
 
 // CONNECT TO DB
 connectDB()
