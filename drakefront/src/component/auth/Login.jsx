@@ -70,7 +70,7 @@ export default function Login() {
       autoComplete="off"
     >
       <Stack direction="column" alignItems="center" justifyContent="center" spacing={2} sx={{ paddingBottom: 0 }}>
-        <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/2.jpg" sx={{ width: 100, height: 100 }} />
+        <Avatar alt="Cindy Baker" src="https://64.media.tumblr.com/6430bbf22c54bd7446a96be8af5ec0a5/94d97124995c74f1-59/s400x600/87501bd52c57ba8b2aad5cd5ac0c722db51923c6.pnj" sx={{ width: 100, height: 100 }} />
 
         <Typography gutterBottom variant="p" component="div" sx={{ paddingTop: 1, fontWeight: 600, fontSize: 24, textAlign: "center", paddingLeft: 0, }}>
         Sign In
