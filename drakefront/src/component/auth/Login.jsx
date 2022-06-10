@@ -2,6 +2,7 @@ import * as React from 'react';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Form from 'react-bootstrap/Form';
+import SendIcon from '@mui/icons-material/AccountCircle';
 import {
   Avatar,
   Stack,
@@ -125,9 +126,9 @@ export default function Login() {
         <Stack
           direction="row">
           <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0, justifyContent: "left", marginLeft: 10 }}>
-            Create account
+            <a href='/signup'>Create account</a>
           </Typography >
-          <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
+          <Button endIcon={<SendIcon />} variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 8 }}>
             Submit
           </Button>
         </Stack>

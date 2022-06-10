@@ -20,9 +20,32 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
+const step = [
+  {
+    title: 'Sign Up',
+    content: <SignUp />,
 
+
+  },
+  {
+    title: 'Login',
+    content: <Login />,
+  }
+]
 
 function AuthPage() {
+  const [activeStep, setActiveStep] = React.useState(0);
+  const handleSignUp = () => {
+    setActiveStep(1);
+  }
+  const handleSignIn = () => {
+    setActiveStep(0);
+  }
+  
+
+  // check if the link is login or signup link
+  const stepContent = step[activeStep].content;
+
   return (
     <Container sx={{ margin: 5, marginTop:8 }}>
       <div className="row">
@@ -60,7 +83,8 @@ function AuthPage() {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <SignUp />
+                  {/* check is signup or a login */}
+                  <Login />
                 </Item>
               </Grid>
             </Grid>
