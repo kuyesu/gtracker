@@ -2,6 +2,8 @@
 
 ---
 
+<img alt="Spirit of the Amazon" src="./drakefront/public/drake.png">
+
 <!-- List of the features -->
 ### Supported features
 
