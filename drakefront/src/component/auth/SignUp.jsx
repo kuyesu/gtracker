@@ -154,9 +154,9 @@ export default function SignUp() {
         <Stack
           direction="row">
           <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0, justifyContent: "left", marginLeft: 10 }}>
-            Have account? <a href="/login">Login</a>
+            Have account? <a href="/">Login</a>
           </Typography >
-          <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
+          <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 7 }}>
             Submit
           </Button>
         </Stack>
