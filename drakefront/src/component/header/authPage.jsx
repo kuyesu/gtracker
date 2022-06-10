@@ -24,7 +24,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function AuthPage() {
   return (
-    <Container sx={{ margin: 5, marginBottom: 5, marginTop:8 }}>
+    <Container sx={{ margin: 5, marginTop:8 }}>
       <div className="row">
         <div className="col-md-6">
           
@@ -60,7 +60,7 @@ function AuthPage() {
                   justifyContent="center"
                   alignItems="center"
                 >
-                  <Login />
+                  <SignUp />
                 </Item>
               </Grid>
             </Grid>

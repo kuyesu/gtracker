@@ -72,13 +72,13 @@ export default function SignUp() {
       <Stack direction="column" alignItems="center" justifyContent="center" spacing={2} sx={{ paddingBottom: 0 }}>
         <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/2.jpg" sx={{ width: 80, height: 80 }} />
 
-        <Typography gutterBottom variant="p" component="div" sx={{ paddingTop: 1, fontWeight: 600, fontSize: 24, textAlign: "center", paddingLeft: 0, }}>
+        {/* <Typography gutterBottom variant="p" component="div" sx={{ paddingTop: 1, fontWeight: 600, fontSize: 24, textAlign: "center", paddingLeft: 0, }}>
         Register
-      </Typography>
+      </Typography> */}
       </Stack>
       
       <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 100 }}>
-        Software Developer Goal Tool for Project Management
+        Create your account
       </Typography>
       <Form sx={{ alignItems: "center" }}>
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -147,13 +147,19 @@ export default function SignUp() {
             control={
               <Switch checked={checked} onChange={handleChecked} name="check" />
             }
-            label="Keep me signed in"
+            label="Agree to terms and conditions"
             inputProps={{ 'aria-label': 'controlled' }}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <Stack
+          direction="row">
+          <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0, justifyContent: "left", marginLeft: 10 }}>
+            Have account? <a href="/login">Login</a>
+          </Typography >
+          <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
+            Submit
+          </Button>
+        </Stack>
       </Form>
     </Box>
   );

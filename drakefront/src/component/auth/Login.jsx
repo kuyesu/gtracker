@@ -2,9 +2,9 @@ import * as React from 'react';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Form from 'react-bootstrap/Form';
-import { 
-  Avatar, 
-  Stack, 
+import {
+  Avatar,
+  Stack,
   Switch,
   TextField,
   FormControl,
@@ -73,10 +73,10 @@ export default function Login() {
         <Avatar alt="Cindy Baker" src="https://64.media.tumblr.com/6430bbf22c54bd7446a96be8af5ec0a5/94d97124995c74f1-59/s400x600/87501bd52c57ba8b2aad5cd5ac0c722db51923c6.pnj" sx={{ width: 100, height: 100 }} />
 
         <Typography gutterBottom variant="p" component="div" sx={{ paddingTop: 1, fontWeight: 600, fontSize: 24, textAlign: "center", paddingLeft: 0, }}>
-        Sign In
-      </Typography>
+          Sign In
+        </Typography>
       </Stack>
-      
+
       <Typography variant="body2" color="text.secondary" sx={{ fontWeight: 100 }}>
         Software Developer Goal Tool for Project Management
       </Typography>
@@ -123,16 +123,13 @@ export default function Login() {
           />
         </Form.Group>
         <Stack
-        direction="row"
-        
-        
-        >
-        <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0,justifyContent: "left", marginLeft: 10 }}>
-        Create account
-      </Typography >
-        <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
-          Submit
-        </Button>
+          direction="row">
+          <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0, justifyContent: "left", marginLeft: 10 }}>
+            Create account
+          </Typography >
+          <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
+            Submit
+          </Button>
         </Stack>
       </Form>
     </Box>
