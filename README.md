@@ -1,4 +1,4 @@
-## Track daily activities of the Team
+## Track daily activities of the Team - Spirit of the Amazon
 
 ---
 
