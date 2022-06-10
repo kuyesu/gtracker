@@ -122,9 +122,18 @@ export default function Login() {
             inputProps={{ 'aria-label': 'controlled' }}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Stack
+        direction="row"
+        
+        
+        >
+        <Typography gutterBottom variant="p" color="primary" component="div" sx={{ paddingTop: 1, fontWeight: 500, fontSize: 14, textAlign: "center", paddingLeft: 0,justifyContent: "left", marginLeft: 10 }}>
+        Create account
+      </Typography >
+        <Button variant="secondary" type="submit" sx={{ backgroundColor: "#4285F4", color: "#fff", justifyContent: "right", marginLeft: 11 }}>
           Submit
         </Button>
+        </Stack>
       </Form>
     </Box>
   );
