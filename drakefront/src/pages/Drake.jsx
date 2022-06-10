@@ -1,9 +1,9 @@
 import React from 'react'
 import 'react-bootstrap/'
 import { Fragment } from 'react'
-import Navigation from '../component/header/Navigation'
 import AuthPage from '../component/header/authPage'
 import SignUp from '../component/auth/SignUp'
+import Dashboard from '../component/dashboard/Dashboard'
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {Link} from 'react-router-dom'
@@ -17,6 +17,7 @@ function Drake() {
         <Routes>
           <Route element={<AuthPage />} path="/" />
           <Route element={<SignUp />} path="/signup" />
+          <Route element={<Dashboard />} path="/dashboard" />
 
           {/* <Home/> */}
         </Routes>

@@ -1,8 +1,11 @@
 import React from 'react'
+import Navigation from '../header/Navigation'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Navigation />
+    </div>
   )
 }
 
